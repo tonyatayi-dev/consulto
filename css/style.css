@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+/* Basic styles */
+
+body {
+    line-height: 1.8rem;
+    color: #898fa1;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #11245A;
+ }
+ 
+ .title-sm {
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+ }
+ 
+ a {
+    font-weight: 700;
+    transition: all 0.4s ease;
+    text-decoration: none;
+ }
+ 
+ img {
+    width: 100%;
+ }
+ 
+ small {
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+
+ section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+ }
+ 
+ /* Navbar styles */
+ .navbar {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+ }
+
+ .logo-text {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #11245A !important;
+ }
+
+ .navbar .nav-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+ }
+
+ .navbar-light .navbar-nav .nav-link.active {
+    color: #E93B81;
+ }
+
+ /* Hero Section */
+
+ #home {
+    background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url(../img/hero_img.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+ }
+
+ #home h1 {
+    font-weight: 700;
+ }
+ 
+ #home p {
+    max-width: 55rem;
+    margin: 1.8rem auto;
+ }
+
+ .btn {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1.2rem 2.8rem;
+    border-radius: 0;
+ }
+ 
+ .btn-brand {
+    background-color: #E93B81;
+    color: #fff;
+ }
+ 
+ .btn-brand:hover {
+    background-color: #ce2f6e;
+    color: #fff;
+ }
+
+ /* Services Section */
+ .section-intro {
+    text-align: center;
+    margin-bottom: 6rem;
+ }
+ 
+ .section-intro .hline {
+    width: 12rem;
+    height: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 1.6rem auto 0 auto;
+ }
+
+ .icon-box {
+    width: 6rem;
+    height: 6rem;
+    background-color: #E93B81;
+    color: #fff;
+    border-radius: 0.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+ }
+
+  /* Portfolio Section */
+
+.portfolio-item {
+   overflow: hidden;
+   position: relative;
+}
+
+.portfolio-item img,
+.portfolio-item .portfolio-overlay {
+   transition: all 0..4s ease;
+}
+
+.portfolio-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(17, 36, 90, 0.8);
+   opacity: 0;
+
+   display: flex;
+   align-items: flex-end;
+   padding: 3rem;
+}
+
+.portfolio-overlay h3,
+.portfolio-overlay h6 {
+   color: #fff;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+   opacity: 1;
+}
+
+.portfolio-item:hover img {
+   transform: scale(1.1);
+}
