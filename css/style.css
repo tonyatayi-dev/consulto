@@ -277,6 +277,52 @@ h1,h2,h3,h4,h5,h6 {
  }
 
  /* Clients Section */
- #clients {
+ #clients img {
     height: 3.5rem;
  }
+
+  /* Contact Section */
+  form .form-control {
+     border-radius: 0;
+  }
+
+  form .form-control:focus {
+     box-shadow: none;
+     border-color: #E93B81;
+  }
+
+   /* Cta Section */
+   #cta {
+      background-color: #E93B81;
+   }
+
+    /* Footer Section */
+   .footer-top {
+      padding-top: 8rem;
+      padding-bottom: 3rem;
+   }
+
+   .footer-bottom {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+   }
+   
+   footer .footer-links a,
+   footer .social-icons a {
+      color: #898fa1;
+   }
+   
+   footer .social-icons a {
+      font-size: 2.4rem;
+   }
+   
+   footer .footer-links a {
+      display: block;
+      font-weight: 400;
+   }
+   
+   footer .social-icons a:hover,
+   footer .footer-links a:hover {
+      color: #E93B81;
+   }
