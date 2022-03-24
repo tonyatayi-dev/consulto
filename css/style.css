@@ -131,6 +131,8 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     justify-content: center;
     font-size: 3.2rem;
+
+    flex: none;
  }
 
   /* Portfolio Section */
@@ -170,4 +172,80 @@ h1,h2,h3,h4,h5,h6 {
 
 .portfolio-item:hover img {
    transform: scale(1.1);
+}
+
+/* Feature Section */
+.feature .icon-box {
+   width: 3.4rem;
+   height: 3.4rem;
+   border-radius: 10rem;
+   font-size: 2.4rem;
+}
+
+  /* Team Members Section */
+  .team-member {
+   background-color: #11245A;
+}
+
+.team-member.even {
+   background-color: #162e6e;
+}
+
+.team-member .hline {
+   width: 7rem;
+   height: 0.2rem;
+   margin: 1.6rem auto;
+   background-color: rgba(255, 255, 255, 0.445);
+}
+
+.team-member .team-member-img img,
+.team-member .team-member-img .social-icons {
+   transition: all 0.4s ease;
+}
+
+.team-member .team-member-img {
+   position: relative;
+   overflow: hidden;
+}
+
+.team-member .team-member-img .social-icons {
+   width: 100%;
+   height: 6rem;
+   background-color: #E93B81;
+   position: absolute;
+   bottom: -6rem;
+   left: 0;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.team-member .team-member-img .social-icons a {
+   width: 4rem;
+   height: 4rem;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 0.2rem solid rgba(255, 255, 255, 0.5);
+   font-size: 2.4rem;
+   color: #fff;
+   border-radius: 100px;
+   margin-left: 0.4rem;
+   margin-right: 0.4rem;
+}
+
+.team-member .team-member-img .social-icons a:hover {
+   background-color: #fff;
+   color: #E93B81;
+}
+
+.team-member:hover .team-member-img .social-icons {
+   bottom: 0;
+}
+
+.team-member:hover img {
+   transform: translateY(-6rem);
 }
